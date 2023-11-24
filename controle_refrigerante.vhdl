@@ -12,7 +12,7 @@ end controle_refrigerante;
 
 architecture controle_refrigerante_architecture of controle_refrigerante is
   -- tipagem da maquina de estados
-  type estado is (q_00, q_05, q_10, q_15);
+  type estado is (q_00, q_05, q_10, q_15, q_coca, q_pepsi, q_sprite);
   -- estado atual da maquina de estados
   signal estadoAtual : estado := q_00;
   begin
@@ -38,8 +38,18 @@ architecture controle_refrigerante_architecture of controle_refrigerante is
           -- se for q_05
           when q_05 =>
             if(moeda = "10") then
-              -- 1 real inserido
-              estadoAtual <= q_15;
+              
+                -- 1 real inserido vai para o estado final
+              if(seletorRefrigerante = "00") then
+                estadoAtual <= q_15;  
+              elsif(seletorRefrigerante = "01") then
+                  estadoAtual <= q_coca;
+              elsif(seletorRefrigerante = "10") then
+                  estadoAtual <= q_pepsi;      
+              elsif(seletorRefrigerante = "11") then
+                  estadoAtual <= q_sprite;
+              end if;      
+
             elsif(moeda = "01") then
               -- 50 centavos inserido             
               estadoAtual <= q_10;
@@ -48,27 +58,55 @@ architecture controle_refrigerante_architecture of controle_refrigerante is
           -- se for q_10
           when q_10 =>
             if(moeda = "01" or moeda = "10") then
-              -- 50 centavos inserido ou 1 real inserido
-              estadoAtual <= q_15;
+              -- 50 centavos inserido ou 1 real inserido vai para o estado final
+              if(seletorRefrigerante = "00") then
+                estadoAtual <= q_15;  
+              elsif(seletorRefrigerante = "01") then
+                  estadoAtual <= q_coca;
+              elsif(seletorRefrigerante = "10") then
+                  estadoAtual <= q_pepsi;      
+              elsif(seletorRefrigerante = "11") then
+                  estadoAtual <= q_sprite;
+              end if;     
             end if;  
 
           -- se for q_15
           when q_15 =>
-            -- volta para o estado atual independente da moeda
-            estadoAtual <= q_00;  
+            -- nesse estado é necessário escolher o refrigerante            
+              if(seletorRefrigerante = "01") then
+                  estadoAtual <= q_coca;
+              elsif(seletorRefrigerante = "10") then
+                  estadoAtual <= q_pepsi;      
+              elsif(seletorRefrigerante = "11") then
+                  estadoAtual <= q_sprite;
+              end if;      
+
+          -- ja selecionado o refrigerante    
+          when others =>
+            -- volta para o estado inicial
+            estadoAtual <= q_00;
         end case;
       end if;  
     end process;
 
-    process(estadoAtual, seletorRefrigerante)
+    -- maquina de moore (independe da entrada para definir estado final)
+    process(estadoAtual)
     begin    
       case estadoAtual is
-        -- se for q_15 exibe o refrigerante
-        when q_15 =>
-          refrigerante <= seletorRefrigerante;
+        -- coca = 01
+        when q_coca =>
+          refrigerante <= "01";
         
-          -- se for qualquer outro estado
-         when others =>
+        -- pepsi = 10
+        when q_pepsi =>
+          refrigerante <= "10";
+
+        -- sprite = 11
+        when q_sprite =>
+          refrigerante <= "11";
+
+        -- qualquer outro estado n exibe nada  
+        when others =>
           refrigerante <= "00";
       end case;
     end process;
