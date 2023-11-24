@@ -18,6 +18,7 @@ architecture controle_refrigerante_architecture of controle_refrigerante is
   begin
     -- detecção do clock e reset
     process(Reset, Clock)
+    begin
       if(Reset = '1') then
         -- se reset entao estado atual inicial
         estadoAtual <= q_00;
@@ -60,6 +61,7 @@ architecture controle_refrigerante_architecture of controle_refrigerante is
     end process;
 
     process(estadoAtual, seletorRefrigerante)
+    begin    
       case estadoAtual is
         -- se for q_15 exibe o refrigerante
         when q_15 =>
