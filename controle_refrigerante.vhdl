@@ -14,7 +14,7 @@ architecture controle_refrigerante_architecture of controle_refrigerante is
   -- tipagem da maquina de estados
   type estado is (q_00, q_05, q_10, q_15);
   -- estado atual da maquina de estados
-  signal estadoAtual : estado;
+  signal estadoAtual : estado := q_00;
   begin
     -- detecção do clock e reset
     process(Reset, Clock)
