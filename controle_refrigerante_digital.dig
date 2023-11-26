@@ -11,6 +11,10 @@
           <appType>GHDL</appType>
         </entry>
         <entry>
+          <string>ghdlOptions</string>
+          <string>--std=93c --ieee=synopsys</string>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>controle_refrigerante</string>
         </entry>
@@ -40,6 +44,10 @@
           <string>Bits</string>
           <int>2</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>bin</intFormat>
+        </entry>
       </elementAttributes>
       <pos x="680" y="340"/>
     </visualElement>
@@ -64,6 +72,10 @@
           <string>small</string>
           <boolean>true</boolean>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>bin</intFormat>
+        </entry>
       </elementAttributes>
       <pos x="300" y="320"/>
     </visualElement>
@@ -78,6 +90,10 @@
           <string>Bits</string>
           <int>2</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>bin</intFormat>
+        </entry>
       </elementAttributes>
       <pos x="300" y="360"/>
     </visualElement>
@@ -91,6 +107,10 @@
         <entry>
           <string>Bits</string>
           <int>2</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>bin</intFormat>
         </entry>
       </elementAttributes>
       <pos x="300" y="400"/>
