@@ -1,0 +1,10 @@
+
+State Machine - |controle_refrigerante|estadoAtual
+Name estadoAtual.q_sprite estadoAtual.q_pepsi estadoAtual.q_coca estadoAtual.q_15 estadoAtual.q_10 estadoAtual.q_05 estadoAtual.q_00 
+estadoAtual.q_00 0 0 0 0 0 0 0 
+estadoAtual.q_05 0 0 0 0 0 1 1 
+estadoAtual.q_10 0 0 0 0 1 0 1 
+estadoAtual.q_15 0 0 0 1 0 0 1 
+estadoAtual.q_coca 0 0 1 0 0 0 1 
+estadoAtual.q_pepsi 0 1 0 0 0 0 1 
+estadoAtual.q_sprite 1 0 0 0 0 0 1 
