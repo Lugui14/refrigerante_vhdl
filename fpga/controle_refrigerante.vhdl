@@ -96,82 +96,82 @@ architecture controle_refrigerante_architecture of controle_refrigerante is
       case estadoAtual is
         -- sem dinheiro
         when q_00 =>
-          hex0(6) = '1';
-          hex1(6) = '1';
-          hex2(6) = '1';
-          hex3(6) = '1';
+          hex0(6) <= '1';
+          hex1(6) <= '1';
+          hex2(6) <= '1';
+          hex3(6) <= '1';
 
         -- 50 centavos
         when q_05 =>
           --cinco
-          hex0 = "0010010";
+          hex0 <= "0010010";
           
           -- ponto
-          hex1 = "1101111";
+          hex1 <= "1101111";
           
           -- "00"
-          hex2(6) = '1';
-          hex3(6) = '1';
+          hex2(6) <= '1';
+          hex3(6) <= '1';
 
         -- 1 real
         when q_10 =>
           --0
-          hex0(6) = "1";
+          hex0(6) <= "1";
 
           -- ponto
-          hex1 = "1101111";
+          hex1 <= "1101111";
 
           -- 1
-          hex2 = "1111000";
+          hex2 <= "1111000";
 
           -- 0
-          hex3(6) = '1';
+          hex3(6) <= '1';
 
         -- 1,50 reais
         when q_15 =>
           --cinco
-          hex0 = "0010010";        
+          hex0 <= "0010010";        
         
           -- ponto
-          hex1 = "1101111";
+          hex1 <= "1101111";
 
           -- 1
-          hex2 = "1111001";
+          hex2 <= "1111001";
 
           -- 0
-          hex3(6) = '1';
+          hex3(6) <= '1';
 
-        -- coca = 01
+        -- coca <= 01
         when q_coca =>
           -- coca
-          hex3 = "1000110";
-          hex2(6) = '1';
-          hex1 = "1000110";
-          hex0(3) = '1';
+          hex3 <= "1000110";
+          hex2(6) <= '1';
+          hex1 <= "1000110";
+          hex0(3) <= '1';
 
-        -- pepsi = 10
+        -- pepsi <= 10
         when q_pepsi =>
           -- peps
-          hex3 = "0001100";
-          hex2 = "0000110";
-          hex1 = "0001100";
-          hex0 = "0010010";
+          hex3 <= "0001100";
+          hex2 <= "0000110";
+          hex1 <= "0001100";
+          hex0 <= "0010010";
 
-        -- sprite = 11
+        -- sprite <= 11
         when q_sprite =>
           --spri
-          hex3 = "0010010";
-          hex2 = "0001100";
-          hex1 = "0001000";
-          hex0 = "1001111";
+          hex3 <= "0010010";
+          hex2 <= "0001100";
+          hex1 <= "0001000";
+          hex0 <= "1001111";
 
         -- qualquer outro estado n exibe nada  
         when others =>
           -- erro
-          hex3 = "0000110";
-          hex2 = "0001000";
-          hex1 = "0001000";
-          hex0(6) = '1';
+          hex3 <= "0000110";
+          hex2 <= "0001000";
+          hex1 <= "0001000";
+          hex0(6) <= '1';
       end case;
     end process;
 
