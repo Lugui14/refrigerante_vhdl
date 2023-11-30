@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for controle_refrigerante
-Thu Nov 30 14:22:15 2023
+Thu Nov 30 15:29:21 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -101,13 +101,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
 
 
-+-------------------------------------------------+
-; Slow Model Fmax Summary                         ;
-+-----------+-----------------+------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
-+-----------+-----------------+------------+------+
-; 385.8 MHz ; 385.8 MHz       ; key[0]     ;      ;
-+-----------+-----------------+------------+------+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 378.36 MHz ; 378.36 MHz      ; key[0]     ;      ;
++------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -116,7 +116,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------+--------+---------------+
 ; Clock  ; Slack  ; End Point TNS ;
 +--------+--------+---------------+
-; key[0] ; -1.592 ; -10.484       ;
+; key[0] ; -1.643 ; -10.603       ;
 +--------+--------+---------------+
 
 
@@ -155,52 +155,52 @@ No paths to report.
 +--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; -1.592 ; estadoAtual.q_05     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.603      ;
-; -1.592 ; estadoAtual.q_05     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.603      ;
-; -1.592 ; estadoAtual.q_05     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.603      ;
-; -1.470 ; estadoAtual.q_pepsi  ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.027      ; 2.535      ;
-; -1.467 ; estadoAtual.q_pepsi  ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.027      ; 2.532      ;
-; -1.421 ; estadoAtual.q_10     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.432      ;
-; -1.421 ; estadoAtual.q_10     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.432      ;
-; -1.421 ; estadoAtual.q_10     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.432      ;
-; -1.411 ; estadoAtual.q_pepsi  ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.449      ;
-; -1.411 ; estadoAtual.q_pepsi  ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.449      ;
-; -1.411 ; estadoAtual.q_pepsi  ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.449      ;
-; -1.386 ; estadoAtual.q_pepsi  ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.424      ;
-; -1.385 ; estadoAtual.q_05     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.423      ;
-; -1.361 ; estadoAtual.q_05     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.399      ;
-; -1.358 ; estadoAtual.q_05     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.396      ;
-; -1.277 ; estadoAtual.q_05     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.288      ;
-; -1.237 ; estadoAtual.q_00     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.248      ;
-; -1.237 ; estadoAtual.q_00     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.248      ;
-; -1.236 ; estadoAtual.q_00     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.247      ;
-; -1.214 ; estadoAtual.q_10     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.252      ;
-; -1.210 ; estadoAtual.q_00     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.221      ;
-; -1.190 ; estadoAtual.q_10     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.228      ;
-; -1.187 ; estadoAtual.q_10     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.225      ;
-; -1.184 ; estadoAtual.q_coca   ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.027      ; 2.249      ;
-; -1.181 ; estadoAtual.q_coca   ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.027      ; 2.246      ;
-; -1.161 ; estadoAtual.q_00     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.199      ;
-; -1.158 ; estadoAtual.q_00     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.196      ;
-; -1.125 ; estadoAtual.q_coca   ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.163      ;
-; -1.125 ; estadoAtual.q_coca   ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.163      ;
-; -1.125 ; estadoAtual.q_coca   ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.163      ;
-; -1.106 ; estadoAtual.q_10     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.027     ; 2.117      ;
-; -1.100 ; estadoAtual.q_coca   ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.138      ;
-; -1.091 ; estadoAtual.q_sprite ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.027      ; 2.156      ;
-; -1.088 ; estadoAtual.q_sprite ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.027      ; 2.153      ;
-; -1.032 ; estadoAtual.q_sprite ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.070      ;
-; -1.032 ; estadoAtual.q_sprite ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.070      ;
-; -1.032 ; estadoAtual.q_sprite ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.070      ;
-; -1.007 ; estadoAtual.q_sprite ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.045      ;
-; -0.993 ; estadoAtual.q_pepsi  ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.027      ; 2.058      ;
-; -0.968 ; estadoAtual.q_00     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.006      ;
-; -0.909 ; estadoAtual.q_15     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 1.947      ;
-; -0.909 ; estadoAtual.q_15     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 1.947      ;
-; -0.909 ; estadoAtual.q_15     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 1.947      ;
-; -0.875 ; estadoAtual.q_15     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 1.913      ;
-; -0.707 ; estadoAtual.q_coca   ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.027      ; 1.772      ;
-; -0.614 ; estadoAtual.q_sprite ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.027      ; 1.679      ;
+; -1.643 ; estadoAtual.q_coca   ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.610      ;
+; -1.571 ; estadoAtual.q_10     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.680      ;
+; -1.570 ; estadoAtual.q_10     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.679      ;
+; -1.566 ; estadoAtual.q_10     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.675      ;
+; -1.511 ; estadoAtual.q_05     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.549      ;
+; -1.479 ; estadoAtual.q_coca   ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.446      ;
+; -1.478 ; estadoAtual.q_coca   ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.445      ;
+; -1.432 ; estadoAtual.q_05     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.470      ;
+; -1.431 ; estadoAtual.q_05     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.469      ;
+; -1.413 ; estadoAtual.q_pepsi  ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.380      ;
+; -1.368 ; estadoAtual.q_10     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.406      ;
+; -1.365 ; estadoAtual.q_coca   ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.403      ;
+; -1.361 ; estadoAtual.q_coca   ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.399      ;
+; -1.360 ; estadoAtual.q_coca   ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.398      ;
+; -1.326 ; estadoAtual.q_05     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.435      ;
+; -1.325 ; estadoAtual.q_05     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.434      ;
+; -1.321 ; estadoAtual.q_05     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.430      ;
+; -1.298 ; estadoAtual.q_sprite ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.265      ;
+; -1.296 ; estadoAtual.q_coca   ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.263      ;
+; -1.289 ; estadoAtual.q_10     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.327      ;
+; -1.288 ; estadoAtual.q_10     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.326      ;
+; -1.249 ; estadoAtual.q_pepsi  ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.216      ;
+; -1.248 ; estadoAtual.q_pepsi  ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.215      ;
+; -1.223 ; estadoAtual.q_00     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.332      ;
+; -1.222 ; estadoAtual.q_00     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.331      ;
+; -1.218 ; estadoAtual.q_00     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.327      ;
+; -1.215 ; estadoAtual.q_15     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.253      ;
+; -1.199 ; estadoAtual.q_05     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.237      ;
+; -1.135 ; estadoAtual.q_pepsi  ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.173      ;
+; -1.134 ; estadoAtual.q_sprite ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.101      ;
+; -1.133 ; estadoAtual.q_sprite ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.100      ;
+; -1.131 ; estadoAtual.q_pepsi  ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.169      ;
+; -1.130 ; estadoAtual.q_pepsi  ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.168      ;
+; -1.066 ; estadoAtual.q_pepsi  ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 2.033      ;
+; -1.056 ; estadoAtual.q_10     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.094      ;
+; -1.020 ; estadoAtual.q_sprite ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.058      ;
+; -1.016 ; estadoAtual.q_sprite ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.054      ;
+; -1.015 ; estadoAtual.q_sprite ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.053      ;
+; -0.988 ; estadoAtual.q_00     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.026      ;
+; -0.987 ; estadoAtual.q_00     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 2.025      ;
+; -0.951 ; estadoAtual.q_sprite ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; -0.071     ; 1.918      ;
+; -0.937 ; estadoAtual.q_15     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.046      ;
+; -0.933 ; estadoAtual.q_15     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.042      ;
+; -0.932 ; estadoAtual.q_15     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.071      ; 2.041      ;
+; -0.738 ; estadoAtual.q_00     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 1.776      ;
+; -0.547 ; estadoAtual.q_00     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 1.585      ;
 +--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -210,51 +210,51 @@ No paths to report.
 ; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 ; 0.445 ; estadoAtual.q_00     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.731      ;
-; 1.267 ; estadoAtual.q_10     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.553      ;
-; 1.366 ; estadoAtual.q_sprite ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.027      ; 1.679      ;
-; 1.449 ; estadoAtual.q_05     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.735      ;
-; 1.456 ; estadoAtual.q_sprite ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.742      ;
-; 1.459 ; estadoAtual.q_coca   ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.027      ; 1.772      ;
-; 1.549 ; estadoAtual.q_coca   ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.835      ;
-; 1.627 ; estadoAtual.q_15     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.913      ;
-; 1.633 ; estadoAtual.q_15     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.919      ;
-; 1.634 ; estadoAtual.q_15     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.920      ;
-; 1.634 ; estadoAtual.q_15     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.920      ;
-; 1.669 ; estadoAtual.q_05     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.955      ;
-; 1.694 ; estadoAtual.q_00     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.980      ;
-; 1.696 ; estadoAtual.q_00     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.982      ;
-; 1.699 ; estadoAtual.q_05     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.985      ;
-; 1.710 ; estadoAtual.q_sprite ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.027      ; 2.023      ;
-; 1.714 ; estadoAtual.q_sprite ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.027      ; 2.027      ;
-; 1.745 ; estadoAtual.q_pepsi  ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.027      ; 2.058      ;
-; 1.784 ; estadoAtual.q_sprite ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.070      ;
-; 1.784 ; estadoAtual.q_sprite ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.070      ;
-; 1.784 ; estadoAtual.q_sprite ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.070      ;
-; 1.803 ; estadoAtual.q_coca   ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.027      ; 2.116      ;
-; 1.807 ; estadoAtual.q_coca   ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.027      ; 2.120      ;
-; 1.832 ; estadoAtual.q_10     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.091      ;
-; 1.833 ; estadoAtual.q_10     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.092      ;
-; 1.833 ; estadoAtual.q_10     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.092      ;
-; 1.835 ; estadoAtual.q_pepsi  ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.121      ;
-; 1.858 ; estadoAtual.q_10     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.117      ;
-; 1.877 ; estadoAtual.q_coca   ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.163      ;
-; 1.877 ; estadoAtual.q_coca   ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.163      ;
-; 1.877 ; estadoAtual.q_coca   ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.163      ;
-; 1.887 ; estadoAtual.q_00     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.146      ;
-; 1.894 ; estadoAtual.q_00     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.153      ;
-; 1.939 ; estadoAtual.q_10     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.225      ;
-; 1.941 ; estadoAtual.q_05     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.200      ;
-; 1.962 ; estadoAtual.q_00     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.221      ;
-; 1.966 ; estadoAtual.q_10     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.252      ;
-; 1.989 ; estadoAtual.q_00     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.248      ;
-; 2.089 ; estadoAtual.q_pepsi  ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.027      ; 2.402      ;
-; 2.093 ; estadoAtual.q_pepsi  ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.027      ; 2.406      ;
-; 2.163 ; estadoAtual.q_pepsi  ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.449      ;
-; 2.163 ; estadoAtual.q_pepsi  ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.449      ;
-; 2.163 ; estadoAtual.q_pepsi  ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.449      ;
-; 2.204 ; estadoAtual.q_05     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.463      ;
-; 2.205 ; estadoAtual.q_05     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.464      ;
-; 2.205 ; estadoAtual.q_05     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; -0.027     ; 2.464      ;
+; 1.295 ; estadoAtual.q_00     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.581      ;
+; 1.299 ; estadoAtual.q_00     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.585      ;
+; 1.446 ; estadoAtual.q_05     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.732      ;
+; 1.496 ; estadoAtual.q_05     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.782      ;
+; 1.539 ; estadoAtual.q_00     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 1.896      ;
+; 1.544 ; estadoAtual.q_00     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 1.901      ;
+; 1.611 ; estadoAtual.q_00     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.897      ;
+; 1.637 ; estadoAtual.q_05     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 1.923      ;
+; 1.642 ; estadoAtual.q_15     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 1.999      ;
+; 1.646 ; estadoAtual.q_15     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 2.003      ;
+; 1.647 ; estadoAtual.q_15     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 2.004      ;
+; 1.703 ; estadoAtual.q_sprite ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 1.918      ;
+; 1.750 ; estadoAtual.q_sprite ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 1.965      ;
+; 1.767 ; estadoAtual.q_sprite ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.053      ;
+; 1.768 ; estadoAtual.q_sprite ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.054      ;
+; 1.772 ; estadoAtual.q_sprite ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.058      ;
+; 1.786 ; estadoAtual.q_10     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 2.143      ;
+; 1.787 ; estadoAtual.q_10     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 2.144      ;
+; 1.791 ; estadoAtual.q_sprite ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 2.006      ;
+; 1.791 ; estadoAtual.q_10     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 2.148      ;
+; 1.792 ; estadoAtual.q_sprite ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 2.007      ;
+; 1.808 ; estadoAtual.q_10     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.094      ;
+; 1.818 ; estadoAtual.q_pepsi  ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 2.033      ;
+; 1.842 ; estadoAtual.q_10     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.128      ;
+; 1.865 ; estadoAtual.q_pepsi  ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 2.080      ;
+; 1.872 ; estadoAtual.q_05     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.158      ;
+; 1.882 ; estadoAtual.q_pepsi  ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.168      ;
+; 1.883 ; estadoAtual.q_pepsi  ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.169      ;
+; 1.887 ; estadoAtual.q_pepsi  ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.173      ;
+; 1.906 ; estadoAtual.q_pepsi  ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 2.121      ;
+; 1.907 ; estadoAtual.q_pepsi  ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 2.122      ;
+; 1.929 ; estadoAtual.q_05     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 2.286      ;
+; 1.930 ; estadoAtual.q_05     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 2.287      ;
+; 1.934 ; estadoAtual.q_05     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 2.291      ;
+; 1.967 ; estadoAtual.q_15     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.253      ;
+; 1.975 ; estadoAtual.q_00     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.071      ; 2.332      ;
+; 2.041 ; estadoAtual.q_10     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.327      ;
+; 2.048 ; estadoAtual.q_coca   ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 2.263      ;
+; 2.095 ; estadoAtual.q_coca   ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 2.310      ;
+; 2.112 ; estadoAtual.q_coca   ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.398      ;
+; 2.113 ; estadoAtual.q_coca   ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.399      ;
+; 2.117 ; estadoAtual.q_coca   ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.403      ;
+; 2.120 ; estadoAtual.q_10     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 2.406      ;
+; 2.136 ; estadoAtual.q_coca   ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 2.351      ;
+; 2.137 ; estadoAtual.q_coca   ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; -0.071     ; 2.352      ;
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -302,11 +302,11 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; sw[*]     ; key[0]     ; 1.593 ; 1.593 ; Fall       ; key[0]          ;
-;  sw[0]    ; key[0]     ; 1.593 ; 1.593 ; Fall       ; key[0]          ;
-;  sw[1]    ; key[0]     ; 1.407 ; 1.407 ; Fall       ; key[0]          ;
-;  sw[8]    ; key[0]     ; 1.053 ; 1.053 ; Fall       ; key[0]          ;
-;  sw[9]    ; key[0]     ; 0.947 ; 0.947 ; Fall       ; key[0]          ;
+; sw[*]     ; key[0]     ; 1.470 ; 1.470 ; Fall       ; key[0]          ;
+;  sw[0]    ; key[0]     ; 1.384 ; 1.384 ; Fall       ; key[0]          ;
+;  sw[1]    ; key[0]     ; 1.470 ; 1.470 ; Fall       ; key[0]          ;
+;  sw[8]    ; key[0]     ; 1.015 ; 1.015 ; Fall       ; key[0]          ;
+;  sw[9]    ; key[0]     ; 1.124 ; 1.124 ; Fall       ; key[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -315,47 +315,48 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; sw[*]     ; key[0]     ; 1.205  ; 1.205  ; Fall       ; key[0]          ;
-;  sw[0]    ; key[0]     ; -0.182 ; -0.182 ; Fall       ; key[0]          ;
-;  sw[1]    ; key[0]     ; 0.121  ; 0.121  ; Fall       ; key[0]          ;
-;  sw[8]    ; key[0]     ; 0.878  ; 0.878  ; Fall       ; key[0]          ;
-;  sw[9]    ; key[0]     ; 1.205  ; 1.205  ; Fall       ; key[0]          ;
+; sw[*]     ; key[0]     ; 1.440  ; 1.440  ; Fall       ; key[0]          ;
+;  sw[0]    ; key[0]     ; -0.136 ; -0.136 ; Fall       ; key[0]          ;
+;  sw[1]    ; key[0]     ; -0.073 ; -0.073 ; Fall       ; key[0]          ;
+;  sw[8]    ; key[0]     ; 1.269  ; 1.269  ; Fall       ; key[0]          ;
+;  sw[9]    ; key[0]     ; 1.440  ; 1.440  ; Fall       ; key[0]          ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; hex0[*]   ; key[0]     ; 9.941  ; 9.941  ; Fall       ; key[0]          ;
-;  hex0[1]  ; key[0]     ; 9.367  ; 9.367  ; Fall       ; key[0]          ;
-;  hex0[2]  ; key[0]     ; 8.232  ; 8.232  ; Fall       ; key[0]          ;
-;  hex0[3]  ; key[0]     ; 8.485  ; 8.485  ; Fall       ; key[0]          ;
-;  hex0[4]  ; key[0]     ; 9.941  ; 9.941  ; Fall       ; key[0]          ;
-;  hex0[6]  ; key[0]     ; 9.721  ; 9.721  ; Fall       ; key[0]          ;
-; hex1[*]   ; key[0]     ; 10.259 ; 10.259 ; Fall       ; key[0]          ;
-;  hex1[0]  ; key[0]     ; 9.343  ; 9.343  ; Fall       ; key[0]          ;
-;  hex1[1]  ; key[0]     ; 10.259 ; 10.259 ; Fall       ; key[0]          ;
-;  hex1[2]  ; key[0]     ; 8.399  ; 8.399  ; Fall       ; key[0]          ;
-;  hex1[3]  ; key[0]     ; 9.204  ; 9.204  ; Fall       ; key[0]          ;
-;  hex1[5]  ; key[0]     ; 9.965  ; 9.965  ; Fall       ; key[0]          ;
-;  hex1[6]  ; key[0]     ; 9.205  ; 9.205  ; Fall       ; key[0]          ;
-; hex2[*]   ; key[0]     ; 9.979  ; 9.979  ; Fall       ; key[0]          ;
-;  hex2[0]  ; key[0]     ; 9.304  ; 9.304  ; Fall       ; key[0]          ;
-;  hex2[1]  ; key[0]     ; 8.822  ; 8.822  ; Fall       ; key[0]          ;
-;  hex2[2]  ; key[0]     ; 9.901  ; 9.901  ; Fall       ; key[0]          ;
-;  hex2[3]  ; key[0]     ; 9.723  ; 9.723  ; Fall       ; key[0]          ;
-;  hex2[4]  ; key[0]     ; 9.668  ; 9.668  ; Fall       ; key[0]          ;
-;  hex2[5]  ; key[0]     ; 9.658  ; 9.658  ; Fall       ; key[0]          ;
-;  hex2[6]  ; key[0]     ; 9.979  ; 9.979  ; Fall       ; key[0]          ;
-; hex3[*]   ; key[0]     ; 9.979  ; 9.979  ; Fall       ; key[0]          ;
-;  hex3[1]  ; key[0]     ; 9.608  ; 9.608  ; Fall       ; key[0]          ;
-;  hex3[2]  ; key[0]     ; 9.653  ; 9.653  ; Fall       ; key[0]          ;
-;  hex3[3]  ; key[0]     ; 7.882  ; 7.882  ; Fall       ; key[0]          ;
-;  hex3[4]  ; key[0]     ; 8.212  ; 8.212  ; Fall       ; key[0]          ;
-;  hex3[6]  ; key[0]     ; 9.979  ; 9.979  ; Fall       ; key[0]          ;
-+-----------+------------+--------+--------+------------+-----------------+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; hex0[*]   ; key[0]     ; 9.432 ; 9.432 ; Fall       ; key[0]          ;
+;  hex0[1]  ; key[0]     ; 9.432 ; 9.432 ; Fall       ; key[0]          ;
+;  hex0[2]  ; key[0]     ; 8.583 ; 8.583 ; Fall       ; key[0]          ;
+;  hex0[3]  ; key[0]     ; 8.572 ; 8.572 ; Fall       ; key[0]          ;
+;  hex0[4]  ; key[0]     ; 8.249 ; 8.249 ; Fall       ; key[0]          ;
+;  hex0[6]  ; key[0]     ; 9.144 ; 9.144 ; Fall       ; key[0]          ;
+; hex1[*]   ; key[0]     ; 9.886 ; 9.886 ; Fall       ; key[0]          ;
+;  hex1[0]  ; key[0]     ; 8.282 ; 8.282 ; Fall       ; key[0]          ;
+;  hex1[1]  ; key[0]     ; 9.865 ; 9.865 ; Fall       ; key[0]          ;
+;  hex1[2]  ; key[0]     ; 9.698 ; 9.698 ; Fall       ; key[0]          ;
+;  hex1[3]  ; key[0]     ; 9.418 ; 9.418 ; Fall       ; key[0]          ;
+;  hex1[4]  ; key[0]     ; 9.620 ; 9.620 ; Fall       ; key[0]          ;
+;  hex1[6]  ; key[0]     ; 9.886 ; 9.886 ; Fall       ; key[0]          ;
+; hex2[*]   ; key[0]     ; 9.910 ; 9.910 ; Fall       ; key[0]          ;
+;  hex2[0]  ; key[0]     ; 9.880 ; 9.880 ; Fall       ; key[0]          ;
+;  hex2[1]  ; key[0]     ; 9.706 ; 9.706 ; Fall       ; key[0]          ;
+;  hex2[2]  ; key[0]     ; 9.655 ; 9.655 ; Fall       ; key[0]          ;
+;  hex2[3]  ; key[0]     ; 9.748 ; 9.748 ; Fall       ; key[0]          ;
+;  hex2[5]  ; key[0]     ; 9.910 ; 9.910 ; Fall       ; key[0]          ;
+;  hex2[6]  ; key[0]     ; 9.771 ; 9.771 ; Fall       ; key[0]          ;
+; hex3[*]   ; key[0]     ; 9.771 ; 9.771 ; Fall       ; key[0]          ;
+;  hex3[0]  ; key[0]     ; 9.653 ; 9.653 ; Fall       ; key[0]          ;
+;  hex3[1]  ; key[0]     ; 9.664 ; 9.664 ; Fall       ; key[0]          ;
+;  hex3[2]  ; key[0]     ; 9.661 ; 9.661 ; Fall       ; key[0]          ;
+;  hex3[3]  ; key[0]     ; 9.608 ; 9.608 ; Fall       ; key[0]          ;
+;  hex3[4]  ; key[0]     ; 9.598 ; 9.598 ; Fall       ; key[0]          ;
+;  hex3[5]  ; key[0]     ; 9.653 ; 9.653 ; Fall       ; key[0]          ;
+;  hex3[6]  ; key[0]     ; 9.771 ; 9.771 ; Fall       ; key[0]          ;
++-----------+------------+-------+-------+------------+-----------------+
 
 
 +-----------------------------------------------------------------------+
@@ -363,33 +364,34 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; hex0[*]   ; key[0]     ; 8.232 ; 8.232 ; Fall       ; key[0]          ;
-;  hex0[1]  ; key[0]     ; 8.599 ; 8.599 ; Fall       ; key[0]          ;
-;  hex0[2]  ; key[0]     ; 8.232 ; 8.232 ; Fall       ; key[0]          ;
-;  hex0[3]  ; key[0]     ; 8.485 ; 8.485 ; Fall       ; key[0]          ;
-;  hex0[4]  ; key[0]     ; 8.753 ; 8.753 ; Fall       ; key[0]          ;
-;  hex0[6]  ; key[0]     ; 9.017 ; 9.017 ; Fall       ; key[0]          ;
-; hex1[*]   ; key[0]     ; 8.399 ; 8.399 ; Fall       ; key[0]          ;
-;  hex1[0]  ; key[0]     ; 9.264 ; 9.264 ; Fall       ; key[0]          ;
-;  hex1[1]  ; key[0]     ; 9.199 ; 9.199 ; Fall       ; key[0]          ;
-;  hex1[2]  ; key[0]     ; 8.399 ; 8.399 ; Fall       ; key[0]          ;
-;  hex1[3]  ; key[0]     ; 8.959 ; 8.959 ; Fall       ; key[0]          ;
-;  hex1[5]  ; key[0]     ; 8.777 ; 8.777 ; Fall       ; key[0]          ;
-;  hex1[6]  ; key[0]     ; 9.205 ; 9.205 ; Fall       ; key[0]          ;
-; hex2[*]   ; key[0]     ; 8.747 ; 8.747 ; Fall       ; key[0]          ;
-;  hex2[0]  ; key[0]     ; 8.747 ; 8.747 ; Fall       ; key[0]          ;
-;  hex2[1]  ; key[0]     ; 8.822 ; 8.822 ; Fall       ; key[0]          ;
-;  hex2[2]  ; key[0]     ; 9.568 ; 9.568 ; Fall       ; key[0]          ;
-;  hex2[3]  ; key[0]     ; 9.125 ; 9.125 ; Fall       ; key[0]          ;
-;  hex2[4]  ; key[0]     ; 9.111 ; 9.111 ; Fall       ; key[0]          ;
-;  hex2[5]  ; key[0]     ; 9.101 ; 9.101 ; Fall       ; key[0]          ;
-;  hex2[6]  ; key[0]     ; 9.646 ; 9.646 ; Fall       ; key[0]          ;
-; hex3[*]   ; key[0]     ; 7.882 ; 7.882 ; Fall       ; key[0]          ;
-;  hex3[1]  ; key[0]     ; 9.481 ; 9.481 ; Fall       ; key[0]          ;
-;  hex3[2]  ; key[0]     ; 9.490 ; 9.490 ; Fall       ; key[0]          ;
-;  hex3[3]  ; key[0]     ; 7.882 ; 7.882 ; Fall       ; key[0]          ;
-;  hex3[4]  ; key[0]     ; 8.212 ; 8.212 ; Fall       ; key[0]          ;
-;  hex3[6]  ; key[0]     ; 9.646 ; 9.646 ; Fall       ; key[0]          ;
+; hex0[*]   ; key[0]     ; 8.249 ; 8.249 ; Fall       ; key[0]          ;
+;  hex0[1]  ; key[0]     ; 9.318 ; 9.318 ; Fall       ; key[0]          ;
+;  hex0[2]  ; key[0]     ; 8.583 ; 8.583 ; Fall       ; key[0]          ;
+;  hex0[3]  ; key[0]     ; 8.572 ; 8.572 ; Fall       ; key[0]          ;
+;  hex0[4]  ; key[0]     ; 8.249 ; 8.249 ; Fall       ; key[0]          ;
+;  hex0[6]  ; key[0]     ; 8.799 ; 8.799 ; Fall       ; key[0]          ;
+; hex1[*]   ; key[0]     ; 8.282 ; 8.282 ; Fall       ; key[0]          ;
+;  hex1[0]  ; key[0]     ; 8.282 ; 8.282 ; Fall       ; key[0]          ;
+;  hex1[1]  ; key[0]     ; 9.316 ; 9.316 ; Fall       ; key[0]          ;
+;  hex1[2]  ; key[0]     ; 9.353 ; 9.353 ; Fall       ; key[0]          ;
+;  hex1[3]  ; key[0]     ; 9.304 ; 9.304 ; Fall       ; key[0]          ;
+;  hex1[4]  ; key[0]     ; 9.558 ; 9.558 ; Fall       ; key[0]          ;
+;  hex1[6]  ; key[0]     ; 9.363 ; 9.363 ; Fall       ; key[0]          ;
+; hex2[*]   ; key[0]     ; 9.250 ; 9.250 ; Fall       ; key[0]          ;
+;  hex2[0]  ; key[0]     ; 9.395 ; 9.395 ; Fall       ; key[0]          ;
+;  hex2[1]  ; key[0]     ; 9.250 ; 9.250 ; Fall       ; key[0]          ;
+;  hex2[2]  ; key[0]     ; 9.296 ; 9.296 ; Fall       ; key[0]          ;
+;  hex2[3]  ; key[0]     ; 9.290 ; 9.290 ; Fall       ; key[0]          ;
+;  hex2[5]  ; key[0]     ; 9.425 ; 9.425 ; Fall       ; key[0]          ;
+;  hex2[6]  ; key[0]     ; 9.657 ; 9.657 ; Fall       ; key[0]          ;
+; hex3[*]   ; key[0]     ; 9.289 ; 9.289 ; Fall       ; key[0]          ;
+;  hex3[0]  ; key[0]     ; 9.567 ; 9.567 ; Fall       ; key[0]          ;
+;  hex3[1]  ; key[0]     ; 9.519 ; 9.519 ; Fall       ; key[0]          ;
+;  hex3[2]  ; key[0]     ; 9.528 ; 9.528 ; Fall       ; key[0]          ;
+;  hex3[3]  ; key[0]     ; 9.327 ; 9.327 ; Fall       ; key[0]          ;
+;  hex3[4]  ; key[0]     ; 9.289 ; 9.289 ; Fall       ; key[0]          ;
+;  hex3[5]  ; key[0]     ; 9.567 ; 9.567 ; Fall       ; key[0]          ;
+;  hex3[6]  ; key[0]     ; 9.657 ; 9.657 ; Fall       ; key[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -398,7 +400,7 @@ No paths to report.
 +--------+--------+---------------+
 ; Clock  ; Slack  ; End Point TNS ;
 +--------+--------+---------------+
-; key[0] ; -0.005 ; -0.015        ;
+; key[0] ; -0.005 ; -0.009        ;
 +--------+--------+---------------+
 
 
@@ -437,52 +439,52 @@ No paths to report.
 +--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; -0.005 ; estadoAtual.q_05     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 1.021      ;
-; -0.005 ; estadoAtual.q_05     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 1.021      ;
-; -0.005 ; estadoAtual.q_05     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 1.021      ;
-; 0.054  ; estadoAtual.q_10     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 0.962      ;
-; 0.054  ; estadoAtual.q_10     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 0.962      ;
-; 0.054  ; estadoAtual.q_10     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 0.962      ;
-; 0.073  ; estadoAtual.q_pepsi  ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.959      ;
-; 0.073  ; estadoAtual.q_pepsi  ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.959      ;
-; 0.073  ; estadoAtual.q_pepsi  ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.959      ;
-; 0.082  ; estadoAtual.q_pepsi  ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.016      ; 0.966      ;
-; 0.084  ; estadoAtual.q_pepsi  ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.016      ; 0.964      ;
-; 0.101  ; estadoAtual.q_05     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.931      ;
-; 0.111  ; estadoAtual.q_pepsi  ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.921      ;
-; 0.119  ; estadoAtual.q_05     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.913      ;
-; 0.121  ; estadoAtual.q_05     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.911      ;
-; 0.129  ; estadoAtual.q_00     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 0.887      ;
-; 0.129  ; estadoAtual.q_00     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 0.887      ;
-; 0.131  ; estadoAtual.q_00     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 0.885      ;
-; 0.137  ; estadoAtual.q_05     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 0.879      ;
-; 0.151  ; estadoAtual.q_00     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.881      ;
-; 0.151  ; estadoAtual.q_00     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 0.865      ;
-; 0.153  ; estadoAtual.q_00     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.879      ;
-; 0.155  ; estadoAtual.q_coca   ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.877      ;
-; 0.155  ; estadoAtual.q_coca   ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.877      ;
-; 0.155  ; estadoAtual.q_coca   ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.877      ;
-; 0.160  ; estadoAtual.q_10     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.872      ;
-; 0.164  ; estadoAtual.q_coca   ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.016      ; 0.884      ;
-; 0.166  ; estadoAtual.q_coca   ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.016      ; 0.882      ;
-; 0.178  ; estadoAtual.q_10     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.854      ;
-; 0.180  ; estadoAtual.q_10     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.852      ;
-; 0.193  ; estadoAtual.q_coca   ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.839      ;
-; 0.196  ; estadoAtual.q_10     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.016     ; 0.820      ;
-; 0.197  ; estadoAtual.q_sprite ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.835      ;
-; 0.197  ; estadoAtual.q_sprite ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.835      ;
-; 0.197  ; estadoAtual.q_sprite ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.835      ;
-; 0.206  ; estadoAtual.q_sprite ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.016      ; 0.842      ;
-; 0.208  ; estadoAtual.q_sprite ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.016      ; 0.840      ;
-; 0.232  ; estadoAtual.q_00     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.800      ;
-; 0.235  ; estadoAtual.q_sprite ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.797      ;
-; 0.238  ; estadoAtual.q_15     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.794      ;
-; 0.238  ; estadoAtual.q_15     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.794      ;
-; 0.238  ; estadoAtual.q_15     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.794      ;
-; 0.251  ; estadoAtual.q_pepsi  ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.016      ; 0.797      ;
-; 0.279  ; estadoAtual.q_15     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.753      ;
-; 0.333  ; estadoAtual.q_coca   ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.016      ; 0.715      ;
-; 0.375  ; estadoAtual.q_sprite ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.016      ; 0.673      ;
+; -0.005 ; estadoAtual.q_10     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 1.056      ;
+; -0.004 ; estadoAtual.q_10     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 1.055      ;
+; 0.000  ; estadoAtual.q_10     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 1.051      ;
+; 0.026  ; estadoAtual.q_coca   ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.987      ;
+; 0.046  ; estadoAtual.q_05     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.986      ;
+; 0.060  ; estadoAtual.q_05     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 0.991      ;
+; 0.061  ; estadoAtual.q_05     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 0.990      ;
+; 0.062  ; estadoAtual.q_coca   ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.951      ;
+; 0.063  ; estadoAtual.q_coca   ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.950      ;
+; 0.065  ; estadoAtual.q_05     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 0.986      ;
+; 0.086  ; estadoAtual.q_05     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.946      ;
+; 0.087  ; estadoAtual.q_05     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.945      ;
+; 0.091  ; estadoAtual.q_pepsi  ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.922      ;
+; 0.093  ; estadoAtual.q_00     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 0.958      ;
+; 0.093  ; estadoAtual.q_10     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.939      ;
+; 0.094  ; estadoAtual.q_00     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 0.957      ;
+; 0.098  ; estadoAtual.q_00     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 0.953      ;
+; 0.108  ; estadoAtual.q_coca   ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.905      ;
+; 0.115  ; estadoAtual.q_coca   ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.917      ;
+; 0.118  ; estadoAtual.q_coca   ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.914      ;
+; 0.119  ; estadoAtual.q_coca   ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.913      ;
+; 0.127  ; estadoAtual.q_pepsi  ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.886      ;
+; 0.128  ; estadoAtual.q_pepsi  ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.885      ;
+; 0.133  ; estadoAtual.q_10     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.899      ;
+; 0.134  ; estadoAtual.q_10     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.898      ;
+; 0.143  ; estadoAtual.q_sprite ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.870      ;
+; 0.146  ; estadoAtual.q_15     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.886      ;
+; 0.166  ; estadoAtual.q_05     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.866      ;
+; 0.173  ; estadoAtual.q_pepsi  ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.840      ;
+; 0.179  ; estadoAtual.q_sprite ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.834      ;
+; 0.180  ; estadoAtual.q_sprite ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.833      ;
+; 0.180  ; estadoAtual.q_pepsi  ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.852      ;
+; 0.183  ; estadoAtual.q_pepsi  ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.849      ;
+; 0.184  ; estadoAtual.q_pepsi  ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.848      ;
+; 0.213  ; estadoAtual.q_10     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.819      ;
+; 0.222  ; estadoAtual.q_00     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.810      ;
+; 0.223  ; estadoAtual.q_00     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.809      ;
+; 0.225  ; estadoAtual.q_sprite ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; -0.019     ; 0.788      ;
+; 0.227  ; estadoAtual.q_15     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 0.824      ;
+; 0.228  ; estadoAtual.q_15     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 0.823      ;
+; 0.232  ; estadoAtual.q_15     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.019      ; 0.819      ;
+; 0.232  ; estadoAtual.q_sprite ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.800      ;
+; 0.235  ; estadoAtual.q_sprite ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.797      ;
+; 0.236  ; estadoAtual.q_sprite ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.796      ;
+; 0.328  ; estadoAtual.q_00     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.704      ;
+; 0.397  ; estadoAtual.q_00     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 1.000        ; 0.000      ; 0.635      ;
 +--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -492,51 +494,51 @@ No paths to report.
 ; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 ; 0.215 ; estadoAtual.q_00     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.367      ;
-; 0.466 ; estadoAtual.q_10     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.618      ;
-; 0.505 ; estadoAtual.q_sprite ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.016      ; 0.673      ;
-; 0.547 ; estadoAtual.q_coca   ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.016      ; 0.715      ;
-; 0.549 ; estadoAtual.q_sprite ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.701      ;
-; 0.564 ; estadoAtual.q_05     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.716      ;
-; 0.591 ; estadoAtual.q_coca   ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.743      ;
-; 0.601 ; estadoAtual.q_15     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.753      ;
-; 0.613 ; estadoAtual.q_05     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.765      ;
-; 0.620 ; estadoAtual.q_15     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.772      ;
-; 0.622 ; estadoAtual.q_15     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.774      ;
-; 0.622 ; estadoAtual.q_15     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.774      ;
-; 0.625 ; estadoAtual.q_sprite ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.016      ; 0.793      ;
-; 0.627 ; estadoAtual.q_sprite ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.016      ; 0.795      ;
-; 0.629 ; estadoAtual.q_pepsi  ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.016      ; 0.797      ;
-; 0.632 ; estadoAtual.q_05     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.784      ;
-; 0.632 ; estadoAtual.q_00     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.784      ;
-; 0.634 ; estadoAtual.q_00     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.786      ;
-; 0.667 ; estadoAtual.q_coca   ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.016      ; 0.835      ;
-; 0.669 ; estadoAtual.q_coca   ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.016      ; 0.837      ;
-; 0.673 ; estadoAtual.q_pepsi  ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.825      ;
-; 0.683 ; estadoAtual.q_sprite ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.835      ;
-; 0.683 ; estadoAtual.q_sprite ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.835      ;
-; 0.683 ; estadoAtual.q_sprite ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.835      ;
-; 0.684 ; estadoAtual.q_10     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.820      ;
-; 0.694 ; estadoAtual.q_10     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.830      ;
-; 0.696 ; estadoAtual.q_10     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.832      ;
-; 0.696 ; estadoAtual.q_10     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.832      ;
-; 0.700 ; estadoAtual.q_10     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.852      ;
-; 0.713 ; estadoAtual.q_05     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.849      ;
-; 0.720 ; estadoAtual.q_10     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.872      ;
-; 0.725 ; estadoAtual.q_00     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.861      ;
-; 0.725 ; estadoAtual.q_coca   ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.877      ;
-; 0.725 ; estadoAtual.q_coca   ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.877      ;
-; 0.725 ; estadoAtual.q_coca   ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.877      ;
-; 0.727 ; estadoAtual.q_00     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.863      ;
-; 0.729 ; estadoAtual.q_00     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.865      ;
-; 0.749 ; estadoAtual.q_pepsi  ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.016      ; 0.917      ;
-; 0.751 ; estadoAtual.q_pepsi  ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.016      ; 0.919      ;
-; 0.751 ; estadoAtual.q_00     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.887      ;
-; 0.807 ; estadoAtual.q_pepsi  ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.959      ;
-; 0.807 ; estadoAtual.q_pepsi  ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.959      ;
-; 0.807 ; estadoAtual.q_pepsi  ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.959      ;
-; 0.829 ; estadoAtual.q_05     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.965      ;
-; 0.831 ; estadoAtual.q_05     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.967      ;
-; 0.831 ; estadoAtual.q_05     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; -0.016     ; 0.967      ;
+; 0.483 ; estadoAtual.q_00     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.635      ;
+; 0.485 ; estadoAtual.q_00     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.637      ;
+; 0.539 ; estadoAtual.q_05     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.691      ;
+; 0.551 ; estadoAtual.q_05     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.703      ;
+; 0.595 ; estadoAtual.q_00     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.766      ;
+; 0.597 ; estadoAtual.q_00     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.768      ;
+; 0.607 ; estadoAtual.q_00     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.759      ;
+; 0.608 ; estadoAtual.q_05     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.760      ;
+; 0.637 ; estadoAtual.q_15     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.808      ;
+; 0.638 ; estadoAtual.q_15     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.809      ;
+; 0.641 ; estadoAtual.q_15     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.812      ;
+; 0.644 ; estadoAtual.q_sprite ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.796      ;
+; 0.645 ; estadoAtual.q_sprite ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.797      ;
+; 0.648 ; estadoAtual.q_sprite ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.800      ;
+; 0.654 ; estadoAtual.q_sprite ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.787      ;
+; 0.655 ; estadoAtual.q_sprite ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.788      ;
+; 0.656 ; estadoAtual.q_sprite ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.789      ;
+; 0.657 ; estadoAtual.q_sprite ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.790      ;
+; 0.662 ; estadoAtual.q_10     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.833      ;
+; 0.663 ; estadoAtual.q_10     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.834      ;
+; 0.666 ; estadoAtual.q_10     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.837      ;
+; 0.667 ; estadoAtual.q_10     ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.819      ;
+; 0.688 ; estadoAtual.q_05     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.840      ;
+; 0.690 ; estadoAtual.q_10     ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.842      ;
+; 0.696 ; estadoAtual.q_pepsi  ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.848      ;
+; 0.697 ; estadoAtual.q_pepsi  ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.849      ;
+; 0.700 ; estadoAtual.q_pepsi  ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.852      ;
+; 0.706 ; estadoAtual.q_pepsi  ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.839      ;
+; 0.707 ; estadoAtual.q_pepsi  ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.840      ;
+; 0.708 ; estadoAtual.q_pepsi  ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.841      ;
+; 0.709 ; estadoAtual.q_pepsi  ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.842      ;
+; 0.709 ; estadoAtual.q_05     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.880      ;
+; 0.710 ; estadoAtual.q_05     ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.881      ;
+; 0.713 ; estadoAtual.q_05     ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.884      ;
+; 0.734 ; estadoAtual.q_15     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.886      ;
+; 0.747 ; estadoAtual.q_10     ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.899      ;
+; 0.761 ; estadoAtual.q_coca   ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.913      ;
+; 0.762 ; estadoAtual.q_coca   ; estadoAtual.q_coca   ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.914      ;
+; 0.765 ; estadoAtual.q_coca   ; estadoAtual.q_sprite ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.917      ;
+; 0.771 ; estadoAtual.q_coca   ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.904      ;
+; 0.772 ; estadoAtual.q_coca   ; estadoAtual.q_00     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.905      ;
+; 0.773 ; estadoAtual.q_coca   ; estadoAtual.q_10     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.906      ;
+; 0.774 ; estadoAtual.q_coca   ; estadoAtual.q_05     ; key[0]       ; key[0]      ; 0.000        ; -0.019     ; 0.907      ;
+; 0.787 ; estadoAtual.q_10     ; estadoAtual.q_15     ; key[0]       ; key[0]      ; 0.000        ; 0.000      ; 0.939      ;
+; 0.787 ; estadoAtual.q_00     ; estadoAtual.q_pepsi  ; key[0]       ; key[0]      ; 0.000        ; 0.019      ; 0.958      ;
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -584,11 +586,11 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; sw[*]     ; key[0]     ; 0.370 ; 0.370 ; Fall       ; key[0]          ;
-;  sw[0]    ; key[0]     ; 0.370 ; 0.370 ; Fall       ; key[0]          ;
-;  sw[1]    ; key[0]     ; 0.312 ; 0.312 ; Fall       ; key[0]          ;
-;  sw[8]    ; key[0]     ; 0.159 ; 0.159 ; Fall       ; key[0]          ;
-;  sw[9]    ; key[0]     ; 0.081 ; 0.081 ; Fall       ; key[0]          ;
+; sw[*]     ; key[0]     ; 0.326 ; 0.326 ; Fall       ; key[0]          ;
+;  sw[0]    ; key[0]     ; 0.312 ; 0.312 ; Fall       ; key[0]          ;
+;  sw[1]    ; key[0]     ; 0.326 ; 0.326 ; Fall       ; key[0]          ;
+;  sw[8]    ; key[0]     ; 0.097 ; 0.097 ; Fall       ; key[0]          ;
+;  sw[9]    ; key[0]     ; 0.116 ; 0.116 ; Fall       ; key[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -597,11 +599,11 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; sw[*]     ; key[0]     ; 0.692 ; 0.692 ; Fall       ; key[0]          ;
-;  sw[0]    ; key[0]     ; 0.176 ; 0.176 ; Fall       ; key[0]          ;
-;  sw[1]    ; key[0]     ; 0.280 ; 0.280 ; Fall       ; key[0]          ;
-;  sw[8]    ; key[0]     ; 0.559 ; 0.559 ; Fall       ; key[0]          ;
-;  sw[9]    ; key[0]     ; 0.692 ; 0.692 ; Fall       ; key[0]          ;
+; sw[*]     ; key[0]     ; 0.774 ; 0.774 ; Fall       ; key[0]          ;
+;  sw[0]    ; key[0]     ; 0.206 ; 0.206 ; Fall       ; key[0]          ;
+;  sw[1]    ; key[0]     ; 0.220 ; 0.220 ; Fall       ; key[0]          ;
+;  sw[8]    ; key[0]     ; 0.715 ; 0.715 ; Fall       ; key[0]          ;
+;  sw[9]    ; key[0]     ; 0.774 ; 0.774 ; Fall       ; key[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -610,33 +612,34 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; hex0[*]   ; key[0]     ; 4.613 ; 4.613 ; Fall       ; key[0]          ;
-;  hex0[1]  ; key[0]     ; 4.379 ; 4.379 ; Fall       ; key[0]          ;
-;  hex0[2]  ; key[0]     ; 3.966 ; 3.966 ; Fall       ; key[0]          ;
-;  hex0[3]  ; key[0]     ; 4.059 ; 4.059 ; Fall       ; key[0]          ;
-;  hex0[4]  ; key[0]     ; 4.613 ; 4.613 ; Fall       ; key[0]          ;
-;  hex0[6]  ; key[0]     ; 4.526 ; 4.526 ; Fall       ; key[0]          ;
-; hex1[*]   ; key[0]     ; 4.700 ; 4.700 ; Fall       ; key[0]          ;
-;  hex1[0]  ; key[0]     ; 4.388 ; 4.388 ; Fall       ; key[0]          ;
-;  hex1[1]  ; key[0]     ; 4.700 ; 4.700 ; Fall       ; key[0]          ;
-;  hex1[2]  ; key[0]     ; 4.069 ; 4.069 ; Fall       ; key[0]          ;
-;  hex1[3]  ; key[0]     ; 4.367 ; 4.367 ; Fall       ; key[0]          ;
-;  hex1[5]  ; key[0]     ; 4.635 ; 4.635 ; Fall       ; key[0]          ;
-;  hex1[6]  ; key[0]     ; 4.355 ; 4.355 ; Fall       ; key[0]          ;
-; hex2[*]   ; key[0]     ; 4.614 ; 4.614 ; Fall       ; key[0]          ;
-;  hex2[0]  ; key[0]     ; 4.384 ; 4.384 ; Fall       ; key[0]          ;
-;  hex2[1]  ; key[0]     ; 4.187 ; 4.187 ; Fall       ; key[0]          ;
-;  hex2[2]  ; key[0]     ; 4.592 ; 4.592 ; Fall       ; key[0]          ;
-;  hex2[3]  ; key[0]     ; 4.550 ; 4.550 ; Fall       ; key[0]          ;
-;  hex2[4]  ; key[0]     ; 4.539 ; 4.539 ; Fall       ; key[0]          ;
-;  hex2[5]  ; key[0]     ; 4.529 ; 4.529 ; Fall       ; key[0]          ;
-;  hex2[6]  ; key[0]     ; 4.614 ; 4.614 ; Fall       ; key[0]          ;
-; hex3[*]   ; key[0]     ; 4.614 ; 4.614 ; Fall       ; key[0]          ;
-;  hex3[1]  ; key[0]     ; 4.572 ; 4.572 ; Fall       ; key[0]          ;
-;  hex3[2]  ; key[0]     ; 4.575 ; 4.575 ; Fall       ; key[0]          ;
-;  hex3[3]  ; key[0]     ; 3.829 ; 3.829 ; Fall       ; key[0]          ;
-;  hex3[4]  ; key[0]     ; 3.946 ; 3.946 ; Fall       ; key[0]          ;
-;  hex3[6]  ; key[0]     ; 4.614 ; 4.614 ; Fall       ; key[0]          ;
+; hex0[*]   ; key[0]     ; 4.435 ; 4.435 ; Fall       ; key[0]          ;
+;  hex0[1]  ; key[0]     ; 4.435 ; 4.435 ; Fall       ; key[0]          ;
+;  hex0[2]  ; key[0]     ; 4.109 ; 4.109 ; Fall       ; key[0]          ;
+;  hex0[3]  ; key[0]     ; 4.101 ; 4.101 ; Fall       ; key[0]          ;
+;  hex0[4]  ; key[0]     ; 3.988 ; 3.988 ; Fall       ; key[0]          ;
+;  hex0[6]  ; key[0]     ; 4.308 ; 4.308 ; Fall       ; key[0]          ;
+; hex1[*]   ; key[0]     ; 4.586 ; 4.586 ; Fall       ; key[0]          ;
+;  hex1[0]  ; key[0]     ; 4.010 ; 4.010 ; Fall       ; key[0]          ;
+;  hex1[1]  ; key[0]     ; 4.569 ; 4.569 ; Fall       ; key[0]          ;
+;  hex1[2]  ; key[0]     ; 4.493 ; 4.493 ; Fall       ; key[0]          ;
+;  hex1[3]  ; key[0]     ; 4.418 ; 4.418 ; Fall       ; key[0]          ;
+;  hex1[4]  ; key[0]     ; 4.492 ; 4.492 ; Fall       ; key[0]          ;
+;  hex1[6]  ; key[0]     ; 4.586 ; 4.586 ; Fall       ; key[0]          ;
+; hex2[*]   ; key[0]     ; 4.594 ; 4.594 ; Fall       ; key[0]          ;
+;  hex2[0]  ; key[0]     ; 4.566 ; 4.566 ; Fall       ; key[0]          ;
+;  hex2[1]  ; key[0]     ; 4.500 ; 4.500 ; Fall       ; key[0]          ;
+;  hex2[2]  ; key[0]     ; 4.544 ; 4.544 ; Fall       ; key[0]          ;
+;  hex2[3]  ; key[0]     ; 4.542 ; 4.542 ; Fall       ; key[0]          ;
+;  hex2[5]  ; key[0]     ; 4.594 ; 4.594 ; Fall       ; key[0]          ;
+;  hex2[6]  ; key[0]     ; 4.571 ; 4.571 ; Fall       ; key[0]          ;
+; hex3[*]   ; key[0]     ; 4.581 ; 4.581 ; Fall       ; key[0]          ;
+;  hex3[0]  ; key[0]     ; 4.517 ; 4.517 ; Fall       ; key[0]          ;
+;  hex3[1]  ; key[0]     ; 4.581 ; 4.581 ; Fall       ; key[0]          ;
+;  hex3[2]  ; key[0]     ; 4.577 ; 4.577 ; Fall       ; key[0]          ;
+;  hex3[3]  ; key[0]     ; 4.505 ; 4.505 ; Fall       ; key[0]          ;
+;  hex3[4]  ; key[0]     ; 4.453 ; 4.453 ; Fall       ; key[0]          ;
+;  hex3[5]  ; key[0]     ; 4.519 ; 4.519 ; Fall       ; key[0]          ;
+;  hex3[6]  ; key[0]     ; 4.571 ; 4.571 ; Fall       ; key[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -645,33 +648,34 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; hex0[*]   ; key[0]     ; 3.966 ; 3.966 ; Fall       ; key[0]          ;
-;  hex0[1]  ; key[0]     ; 4.090 ; 4.090 ; Fall       ; key[0]          ;
-;  hex0[2]  ; key[0]     ; 3.966 ; 3.966 ; Fall       ; key[0]          ;
-;  hex0[3]  ; key[0]     ; 4.059 ; 4.059 ; Fall       ; key[0]          ;
-;  hex0[4]  ; key[0]     ; 4.167 ; 4.167 ; Fall       ; key[0]          ;
-;  hex0[6]  ; key[0]     ; 4.266 ; 4.266 ; Fall       ; key[0]          ;
-; hex1[*]   ; key[0]     ; 4.069 ; 4.069 ; Fall       ; key[0]          ;
-;  hex1[0]  ; key[0]     ; 4.368 ; 4.368 ; Fall       ; key[0]          ;
-;  hex1[1]  ; key[0]     ; 4.358 ; 4.358 ; Fall       ; key[0]          ;
-;  hex1[2]  ; key[0]     ; 4.069 ; 4.069 ; Fall       ; key[0]          ;
-;  hex1[3]  ; key[0]     ; 4.234 ; 4.234 ; Fall       ; key[0]          ;
-;  hex1[5]  ; key[0]     ; 4.191 ; 4.191 ; Fall       ; key[0]          ;
-;  hex1[6]  ; key[0]     ; 4.355 ; 4.355 ; Fall       ; key[0]          ;
-; hex2[*]   ; key[0]     ; 4.157 ; 4.157 ; Fall       ; key[0]          ;
-;  hex2[0]  ; key[0]     ; 4.157 ; 4.157 ; Fall       ; key[0]          ;
-;  hex2[1]  ; key[0]     ; 4.187 ; 4.187 ; Fall       ; key[0]          ;
-;  hex2[2]  ; key[0]     ; 4.482 ; 4.482 ; Fall       ; key[0]          ;
-;  hex2[3]  ; key[0]     ; 4.325 ; 4.325 ; Fall       ; key[0]          ;
-;  hex2[4]  ; key[0]     ; 4.312 ; 4.312 ; Fall       ; key[0]          ;
-;  hex2[5]  ; key[0]     ; 4.302 ; 4.302 ; Fall       ; key[0]          ;
-;  hex2[6]  ; key[0]     ; 4.504 ; 4.504 ; Fall       ; key[0]          ;
-; hex3[*]   ; key[0]     ; 3.829 ; 3.829 ; Fall       ; key[0]          ;
-;  hex3[1]  ; key[0]     ; 4.507 ; 4.507 ; Fall       ; key[0]          ;
-;  hex3[2]  ; key[0]     ; 4.512 ; 4.512 ; Fall       ; key[0]          ;
-;  hex3[3]  ; key[0]     ; 3.829 ; 3.829 ; Fall       ; key[0]          ;
-;  hex3[4]  ; key[0]     ; 3.946 ; 3.946 ; Fall       ; key[0]          ;
-;  hex3[6]  ; key[0]     ; 4.504 ; 4.504 ; Fall       ; key[0]          ;
+; hex0[*]   ; key[0]     ; 3.988 ; 3.988 ; Fall       ; key[0]          ;
+;  hex0[1]  ; key[0]     ; 4.373 ; 4.373 ; Fall       ; key[0]          ;
+;  hex0[2]  ; key[0]     ; 4.109 ; 4.109 ; Fall       ; key[0]          ;
+;  hex0[3]  ; key[0]     ; 4.101 ; 4.101 ; Fall       ; key[0]          ;
+;  hex0[4]  ; key[0]     ; 3.988 ; 3.988 ; Fall       ; key[0]          ;
+;  hex0[6]  ; key[0]     ; 4.191 ; 4.191 ; Fall       ; key[0]          ;
+; hex1[*]   ; key[0]     ; 4.010 ; 4.010 ; Fall       ; key[0]          ;
+;  hex1[0]  ; key[0]     ; 4.010 ; 4.010 ; Fall       ; key[0]          ;
+;  hex1[1]  ; key[0]     ; 4.362 ; 4.362 ; Fall       ; key[0]          ;
+;  hex1[2]  ; key[0]     ; 4.376 ; 4.376 ; Fall       ; key[0]          ;
+;  hex1[3]  ; key[0]     ; 4.356 ; 4.356 ; Fall       ; key[0]          ;
+;  hex1[4]  ; key[0]     ; 4.476 ; 4.476 ; Fall       ; key[0]          ;
+;  hex1[6]  ; key[0]     ; 4.411 ; 4.411 ; Fall       ; key[0]          ;
+; hex2[*]   ; key[0]     ; 4.373 ; 4.373 ; Fall       ; key[0]          ;
+;  hex2[0]  ; key[0]     ; 4.428 ; 4.428 ; Fall       ; key[0]          ;
+;  hex2[1]  ; key[0]     ; 4.373 ; 4.373 ; Fall       ; key[0]          ;
+;  hex2[2]  ; key[0]     ; 4.396 ; 4.396 ; Fall       ; key[0]          ;
+;  hex2[3]  ; key[0]     ; 4.413 ; 4.413 ; Fall       ; key[0]          ;
+;  hex2[5]  ; key[0]     ; 4.456 ; 4.456 ; Fall       ; key[0]          ;
+;  hex2[6]  ; key[0]     ; 4.509 ; 4.509 ; Fall       ; key[0]          ;
+; hex3[*]   ; key[0]     ; 4.348 ; 4.348 ; Fall       ; key[0]          ;
+;  hex3[0]  ; key[0]     ; 4.502 ; 4.502 ; Fall       ; key[0]          ;
+;  hex3[1]  ; key[0]     ; 4.523 ; 4.523 ; Fall       ; key[0]          ;
+;  hex3[2]  ; key[0]     ; 4.535 ; 4.535 ; Fall       ; key[0]          ;
+;  hex3[3]  ; key[0]     ; 4.375 ; 4.375 ; Fall       ; key[0]          ;
+;  hex3[4]  ; key[0]     ; 4.348 ; 4.348 ; Fall       ; key[0]          ;
+;  hex3[5]  ; key[0]     ; 4.504 ; 4.504 ; Fall       ; key[0]          ;
+;  hex3[6]  ; key[0]     ; 4.509 ; 4.509 ; Fall       ; key[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -680,10 +684,10 @@ No paths to report.
 +------------------+---------+-------+----------+---------+---------------------+
 ; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -1.592  ; 0.215 ; N/A      ; N/A     ; -1.469              ;
-;  key[0]          ; -1.592  ; 0.215 ; N/A      ; N/A     ; -1.469              ;
-; Design-wide TNS  ; -10.484 ; 0.0   ; 0.0      ; 0.0     ; -10.023             ;
-;  key[0]          ; -10.484 ; 0.000 ; N/A      ; N/A     ; -10.023             ;
+; Worst-case Slack ; -1.643  ; 0.215 ; N/A      ; N/A     ; -1.469              ;
+;  key[0]          ; -1.643  ; 0.215 ; N/A      ; N/A     ; -1.469              ;
+; Design-wide TNS  ; -10.603 ; 0.0   ; 0.0      ; 0.0     ; -10.023             ;
+;  key[0]          ; -10.603 ; 0.000 ; N/A      ; N/A     ; -10.023             ;
 +------------------+---------+-------+----------+---------+---------------------+
 
 
@@ -692,11 +696,11 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; sw[*]     ; key[0]     ; 1.593 ; 1.593 ; Fall       ; key[0]          ;
-;  sw[0]    ; key[0]     ; 1.593 ; 1.593 ; Fall       ; key[0]          ;
-;  sw[1]    ; key[0]     ; 1.407 ; 1.407 ; Fall       ; key[0]          ;
-;  sw[8]    ; key[0]     ; 1.053 ; 1.053 ; Fall       ; key[0]          ;
-;  sw[9]    ; key[0]     ; 0.947 ; 0.947 ; Fall       ; key[0]          ;
+; sw[*]     ; key[0]     ; 1.470 ; 1.470 ; Fall       ; key[0]          ;
+;  sw[0]    ; key[0]     ; 1.384 ; 1.384 ; Fall       ; key[0]          ;
+;  sw[1]    ; key[0]     ; 1.470 ; 1.470 ; Fall       ; key[0]          ;
+;  sw[8]    ; key[0]     ; 1.015 ; 1.015 ; Fall       ; key[0]          ;
+;  sw[9]    ; key[0]     ; 1.124 ; 1.124 ; Fall       ; key[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -705,47 +709,48 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; sw[*]     ; key[0]     ; 1.205 ; 1.205 ; Fall       ; key[0]          ;
-;  sw[0]    ; key[0]     ; 0.176 ; 0.176 ; Fall       ; key[0]          ;
-;  sw[1]    ; key[0]     ; 0.280 ; 0.280 ; Fall       ; key[0]          ;
-;  sw[8]    ; key[0]     ; 0.878 ; 0.878 ; Fall       ; key[0]          ;
-;  sw[9]    ; key[0]     ; 1.205 ; 1.205 ; Fall       ; key[0]          ;
+; sw[*]     ; key[0]     ; 1.440 ; 1.440 ; Fall       ; key[0]          ;
+;  sw[0]    ; key[0]     ; 0.206 ; 0.206 ; Fall       ; key[0]          ;
+;  sw[1]    ; key[0]     ; 0.220 ; 0.220 ; Fall       ; key[0]          ;
+;  sw[8]    ; key[0]     ; 1.269 ; 1.269 ; Fall       ; key[0]          ;
+;  sw[9]    ; key[0]     ; 1.440 ; 1.440 ; Fall       ; key[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; hex0[*]   ; key[0]     ; 9.941  ; 9.941  ; Fall       ; key[0]          ;
-;  hex0[1]  ; key[0]     ; 9.367  ; 9.367  ; Fall       ; key[0]          ;
-;  hex0[2]  ; key[0]     ; 8.232  ; 8.232  ; Fall       ; key[0]          ;
-;  hex0[3]  ; key[0]     ; 8.485  ; 8.485  ; Fall       ; key[0]          ;
-;  hex0[4]  ; key[0]     ; 9.941  ; 9.941  ; Fall       ; key[0]          ;
-;  hex0[6]  ; key[0]     ; 9.721  ; 9.721  ; Fall       ; key[0]          ;
-; hex1[*]   ; key[0]     ; 10.259 ; 10.259 ; Fall       ; key[0]          ;
-;  hex1[0]  ; key[0]     ; 9.343  ; 9.343  ; Fall       ; key[0]          ;
-;  hex1[1]  ; key[0]     ; 10.259 ; 10.259 ; Fall       ; key[0]          ;
-;  hex1[2]  ; key[0]     ; 8.399  ; 8.399  ; Fall       ; key[0]          ;
-;  hex1[3]  ; key[0]     ; 9.204  ; 9.204  ; Fall       ; key[0]          ;
-;  hex1[5]  ; key[0]     ; 9.965  ; 9.965  ; Fall       ; key[0]          ;
-;  hex1[6]  ; key[0]     ; 9.205  ; 9.205  ; Fall       ; key[0]          ;
-; hex2[*]   ; key[0]     ; 9.979  ; 9.979  ; Fall       ; key[0]          ;
-;  hex2[0]  ; key[0]     ; 9.304  ; 9.304  ; Fall       ; key[0]          ;
-;  hex2[1]  ; key[0]     ; 8.822  ; 8.822  ; Fall       ; key[0]          ;
-;  hex2[2]  ; key[0]     ; 9.901  ; 9.901  ; Fall       ; key[0]          ;
-;  hex2[3]  ; key[0]     ; 9.723  ; 9.723  ; Fall       ; key[0]          ;
-;  hex2[4]  ; key[0]     ; 9.668  ; 9.668  ; Fall       ; key[0]          ;
-;  hex2[5]  ; key[0]     ; 9.658  ; 9.658  ; Fall       ; key[0]          ;
-;  hex2[6]  ; key[0]     ; 9.979  ; 9.979  ; Fall       ; key[0]          ;
-; hex3[*]   ; key[0]     ; 9.979  ; 9.979  ; Fall       ; key[0]          ;
-;  hex3[1]  ; key[0]     ; 9.608  ; 9.608  ; Fall       ; key[0]          ;
-;  hex3[2]  ; key[0]     ; 9.653  ; 9.653  ; Fall       ; key[0]          ;
-;  hex3[3]  ; key[0]     ; 7.882  ; 7.882  ; Fall       ; key[0]          ;
-;  hex3[4]  ; key[0]     ; 8.212  ; 8.212  ; Fall       ; key[0]          ;
-;  hex3[6]  ; key[0]     ; 9.979  ; 9.979  ; Fall       ; key[0]          ;
-+-----------+------------+--------+--------+------------+-----------------+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; hex0[*]   ; key[0]     ; 9.432 ; 9.432 ; Fall       ; key[0]          ;
+;  hex0[1]  ; key[0]     ; 9.432 ; 9.432 ; Fall       ; key[0]          ;
+;  hex0[2]  ; key[0]     ; 8.583 ; 8.583 ; Fall       ; key[0]          ;
+;  hex0[3]  ; key[0]     ; 8.572 ; 8.572 ; Fall       ; key[0]          ;
+;  hex0[4]  ; key[0]     ; 8.249 ; 8.249 ; Fall       ; key[0]          ;
+;  hex0[6]  ; key[0]     ; 9.144 ; 9.144 ; Fall       ; key[0]          ;
+; hex1[*]   ; key[0]     ; 9.886 ; 9.886 ; Fall       ; key[0]          ;
+;  hex1[0]  ; key[0]     ; 8.282 ; 8.282 ; Fall       ; key[0]          ;
+;  hex1[1]  ; key[0]     ; 9.865 ; 9.865 ; Fall       ; key[0]          ;
+;  hex1[2]  ; key[0]     ; 9.698 ; 9.698 ; Fall       ; key[0]          ;
+;  hex1[3]  ; key[0]     ; 9.418 ; 9.418 ; Fall       ; key[0]          ;
+;  hex1[4]  ; key[0]     ; 9.620 ; 9.620 ; Fall       ; key[0]          ;
+;  hex1[6]  ; key[0]     ; 9.886 ; 9.886 ; Fall       ; key[0]          ;
+; hex2[*]   ; key[0]     ; 9.910 ; 9.910 ; Fall       ; key[0]          ;
+;  hex2[0]  ; key[0]     ; 9.880 ; 9.880 ; Fall       ; key[0]          ;
+;  hex2[1]  ; key[0]     ; 9.706 ; 9.706 ; Fall       ; key[0]          ;
+;  hex2[2]  ; key[0]     ; 9.655 ; 9.655 ; Fall       ; key[0]          ;
+;  hex2[3]  ; key[0]     ; 9.748 ; 9.748 ; Fall       ; key[0]          ;
+;  hex2[5]  ; key[0]     ; 9.910 ; 9.910 ; Fall       ; key[0]          ;
+;  hex2[6]  ; key[0]     ; 9.771 ; 9.771 ; Fall       ; key[0]          ;
+; hex3[*]   ; key[0]     ; 9.771 ; 9.771 ; Fall       ; key[0]          ;
+;  hex3[0]  ; key[0]     ; 9.653 ; 9.653 ; Fall       ; key[0]          ;
+;  hex3[1]  ; key[0]     ; 9.664 ; 9.664 ; Fall       ; key[0]          ;
+;  hex3[2]  ; key[0]     ; 9.661 ; 9.661 ; Fall       ; key[0]          ;
+;  hex3[3]  ; key[0]     ; 9.608 ; 9.608 ; Fall       ; key[0]          ;
+;  hex3[4]  ; key[0]     ; 9.598 ; 9.598 ; Fall       ; key[0]          ;
+;  hex3[5]  ; key[0]     ; 9.653 ; 9.653 ; Fall       ; key[0]          ;
+;  hex3[6]  ; key[0]     ; 9.771 ; 9.771 ; Fall       ; key[0]          ;
++-----------+------------+-------+-------+------------+-----------------+
 
 
 +-----------------------------------------------------------------------+
@@ -753,33 +758,34 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; hex0[*]   ; key[0]     ; 3.966 ; 3.966 ; Fall       ; key[0]          ;
-;  hex0[1]  ; key[0]     ; 4.090 ; 4.090 ; Fall       ; key[0]          ;
-;  hex0[2]  ; key[0]     ; 3.966 ; 3.966 ; Fall       ; key[0]          ;
-;  hex0[3]  ; key[0]     ; 4.059 ; 4.059 ; Fall       ; key[0]          ;
-;  hex0[4]  ; key[0]     ; 4.167 ; 4.167 ; Fall       ; key[0]          ;
-;  hex0[6]  ; key[0]     ; 4.266 ; 4.266 ; Fall       ; key[0]          ;
-; hex1[*]   ; key[0]     ; 4.069 ; 4.069 ; Fall       ; key[0]          ;
-;  hex1[0]  ; key[0]     ; 4.368 ; 4.368 ; Fall       ; key[0]          ;
-;  hex1[1]  ; key[0]     ; 4.358 ; 4.358 ; Fall       ; key[0]          ;
-;  hex1[2]  ; key[0]     ; 4.069 ; 4.069 ; Fall       ; key[0]          ;
-;  hex1[3]  ; key[0]     ; 4.234 ; 4.234 ; Fall       ; key[0]          ;
-;  hex1[5]  ; key[0]     ; 4.191 ; 4.191 ; Fall       ; key[0]          ;
-;  hex1[6]  ; key[0]     ; 4.355 ; 4.355 ; Fall       ; key[0]          ;
-; hex2[*]   ; key[0]     ; 4.157 ; 4.157 ; Fall       ; key[0]          ;
-;  hex2[0]  ; key[0]     ; 4.157 ; 4.157 ; Fall       ; key[0]          ;
-;  hex2[1]  ; key[0]     ; 4.187 ; 4.187 ; Fall       ; key[0]          ;
-;  hex2[2]  ; key[0]     ; 4.482 ; 4.482 ; Fall       ; key[0]          ;
-;  hex2[3]  ; key[0]     ; 4.325 ; 4.325 ; Fall       ; key[0]          ;
-;  hex2[4]  ; key[0]     ; 4.312 ; 4.312 ; Fall       ; key[0]          ;
-;  hex2[5]  ; key[0]     ; 4.302 ; 4.302 ; Fall       ; key[0]          ;
-;  hex2[6]  ; key[0]     ; 4.504 ; 4.504 ; Fall       ; key[0]          ;
-; hex3[*]   ; key[0]     ; 3.829 ; 3.829 ; Fall       ; key[0]          ;
-;  hex3[1]  ; key[0]     ; 4.507 ; 4.507 ; Fall       ; key[0]          ;
-;  hex3[2]  ; key[0]     ; 4.512 ; 4.512 ; Fall       ; key[0]          ;
-;  hex3[3]  ; key[0]     ; 3.829 ; 3.829 ; Fall       ; key[0]          ;
-;  hex3[4]  ; key[0]     ; 3.946 ; 3.946 ; Fall       ; key[0]          ;
-;  hex3[6]  ; key[0]     ; 4.504 ; 4.504 ; Fall       ; key[0]          ;
+; hex0[*]   ; key[0]     ; 3.988 ; 3.988 ; Fall       ; key[0]          ;
+;  hex0[1]  ; key[0]     ; 4.373 ; 4.373 ; Fall       ; key[0]          ;
+;  hex0[2]  ; key[0]     ; 4.109 ; 4.109 ; Fall       ; key[0]          ;
+;  hex0[3]  ; key[0]     ; 4.101 ; 4.101 ; Fall       ; key[0]          ;
+;  hex0[4]  ; key[0]     ; 3.988 ; 3.988 ; Fall       ; key[0]          ;
+;  hex0[6]  ; key[0]     ; 4.191 ; 4.191 ; Fall       ; key[0]          ;
+; hex1[*]   ; key[0]     ; 4.010 ; 4.010 ; Fall       ; key[0]          ;
+;  hex1[0]  ; key[0]     ; 4.010 ; 4.010 ; Fall       ; key[0]          ;
+;  hex1[1]  ; key[0]     ; 4.362 ; 4.362 ; Fall       ; key[0]          ;
+;  hex1[2]  ; key[0]     ; 4.376 ; 4.376 ; Fall       ; key[0]          ;
+;  hex1[3]  ; key[0]     ; 4.356 ; 4.356 ; Fall       ; key[0]          ;
+;  hex1[4]  ; key[0]     ; 4.476 ; 4.476 ; Fall       ; key[0]          ;
+;  hex1[6]  ; key[0]     ; 4.411 ; 4.411 ; Fall       ; key[0]          ;
+; hex2[*]   ; key[0]     ; 4.373 ; 4.373 ; Fall       ; key[0]          ;
+;  hex2[0]  ; key[0]     ; 4.428 ; 4.428 ; Fall       ; key[0]          ;
+;  hex2[1]  ; key[0]     ; 4.373 ; 4.373 ; Fall       ; key[0]          ;
+;  hex2[2]  ; key[0]     ; 4.396 ; 4.396 ; Fall       ; key[0]          ;
+;  hex2[3]  ; key[0]     ; 4.413 ; 4.413 ; Fall       ; key[0]          ;
+;  hex2[5]  ; key[0]     ; 4.456 ; 4.456 ; Fall       ; key[0]          ;
+;  hex2[6]  ; key[0]     ; 4.509 ; 4.509 ; Fall       ; key[0]          ;
+; hex3[*]   ; key[0]     ; 4.348 ; 4.348 ; Fall       ; key[0]          ;
+;  hex3[0]  ; key[0]     ; 4.502 ; 4.502 ; Fall       ; key[0]          ;
+;  hex3[1]  ; key[0]     ; 4.523 ; 4.523 ; Fall       ; key[0]          ;
+;  hex3[2]  ; key[0]     ; 4.535 ; 4.535 ; Fall       ; key[0]          ;
+;  hex3[3]  ; key[0]     ; 4.375 ; 4.375 ; Fall       ; key[0]          ;
+;  hex3[4]  ; key[0]     ; 4.348 ; 4.348 ; Fall       ; key[0]          ;
+;  hex3[5]  ; key[0]     ; 4.504 ; 4.504 ; Fall       ; key[0]          ;
+;  hex3[6]  ; key[0]     ; 4.509 ; 4.509 ; Fall       ; key[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -824,8 +830,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 5     ; 5    ;
 ; Unconstrained Input Port Paths  ; 35    ; 35   ;
-; Unconstrained Output Ports      ; 23    ; 23   ;
-; Unconstrained Output Port Paths ; 44    ; 44   ;
+; Unconstrained Output Ports      ; 24    ; 24   ;
+; Unconstrained Output Port Paths ; 54    ; 54   ;
 +---------------------------------+-------+------+
 
 
@@ -835,7 +841,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Thu Nov 30 14:22:15 2023
+    Info: Processing started: Thu Nov 30 15:29:20 2023
 Info: Command: quartus_sta controle_refrigerante -c controle_refrigerante
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -848,10 +854,10 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.592
+Info (332146): Worst-case setup slack is -1.643
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.592       -10.484 key[0] 
+    Info (332119):    -1.643       -10.603 key[0] 
 Info (332146): Worst-case hold slack is 0.445
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -868,7 +874,7 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case setup slack is -0.005
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -0.005        -0.015 key[0] 
+    Info (332119):    -0.005        -0.009 key[0] 
 Info (332146): Worst-case hold slack is 0.215
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -884,8 +890,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4535 megabytes
-    Info: Processing ended: Thu Nov 30 14:22:15 2023
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Thu Nov 30 15:29:21 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

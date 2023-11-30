@@ -103,43 +103,47 @@ architecture controle_refrigerante_architecture of controle_refrigerante is
 
         -- 50 centavos
         when q_05 =>
-          --cinco
-          hex0 <= "0010010";
+          -- 0
+			 hex0 <= "1000000";
+			 
+			 --cinco
+          hex1 <= "0010010";
           
           -- ponto
-          hex1 <= "1101111";
+          hex2 <= "1101111";
           
-          -- "00"
-          hex2 <= "1000000";
+          -- "0"
+          
           hex3 <= "1000000";
 
         -- 1 real
         when q_10 =>
           --0
           hex0 <= "1000000";
+			 
+			 -- 0
+          hex1 <= "1000000";
 
           -- ponto
-          hex1 <= "1101111";
+          hex2 <= "1101111";
 
           -- 1
-          hex2 <= "1111001";
+          hex3 <= "1111001";
 
-          -- 0
-          hex3 <= "1000000";
 
         -- 1,50 reais
         when q_15 =>
+		    -- 0
+          hex0 <= "1000000";
+		  
           --cinco
-          hex0 <= "0010010";        
+          hex1 <= "0010010";        
         
           -- ponto
-          hex1 <= "1101111";
+          hex2 <= "1101111";
 
           -- 1
-          hex2 <= "1111001";
-
-          -- 0
-          hex3 <= "1000000";
+          hex3 <= "1111001";
 
         -- coca <= 01
         when q_coca =>
